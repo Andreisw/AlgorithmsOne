@@ -49,8 +49,11 @@ class AlgorithmsOneTests: XCTestCase {
     func test_split_numbers() throws {
       let list = splitList.splitInPrimeAndComposite(numbersList: [2,3,8,4,13,24,25])
         let list2 = splitList.splitInPrimeAndComposite(numbersList: [1,2,3,4,5,6,7,8,9])
+        let list3 = splitList.splitInPrimeAndComposite(numbersList: [2,3,5])
+        
         XCTAssert(list == ([2,3,13], [8,4,24,25]))
         XCTAssert(list2 == ([2,3,5,7],[4,6,8,9]))
+        XCTAssert(list3 == ([2,3,5],[]))
     }
     
 }

@@ -12,22 +12,19 @@ import Foundation
 class SplitListPrimeAndComposite {
     let prime = PrimeNumber()
     
-func splitInPrimeAndComposite(numbersList: [Int]) -> ([Int], [Int]) {
-    var splitResult: (prime: [Int], composite: [Int]) = ([], [])
-    var primeNumbers: [Int] = []
-    var compositeNumbers: [Int] = []
-    for number in numbersList {
-        if number <= 1 {
-            continue
+    func splitInPrimeAndComposite(numbersList: [Int]) -> ([Int], [Int]) {
+        var splitResult: (prime: [Int], composite: [Int]) = ([], [])
+        var primeNumbers: [Int] = []
+        var compositeNumbers: [Int] = []
+        for number in numbersList {
+            if number <= 1 {
+                continue
+            }
+            prime.checkIsPrimeNumber(number: number) == true
+                ? primeNumbers.append(number) : compositeNumbers.append(number)
         }
-        if prime.checkIsPrimeNumber(number: number) == true {
-            primeNumbers.append(number)
-        } else {
-            compositeNumbers.append(number)
-        }
+        splitResult.composite = compositeNumbers
+        splitResult.prime = primeNumbers
+        return splitResult
     }
-    splitResult.composite = compositeNumbers
-    splitResult.prime = primeNumbers
-    return splitResult
-}
 }
