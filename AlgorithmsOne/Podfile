@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AlgorithmsOne' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ 'pod SwiftLint'
+
+  target 'AlgorithmsOneTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AlgorithmsOneUITests' do
+    # Pods for testing
+  end
+
+end

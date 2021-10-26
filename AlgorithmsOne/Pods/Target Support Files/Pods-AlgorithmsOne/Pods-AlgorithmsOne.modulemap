@@ -1,0 +1,6 @@
+framework module Pods_AlgorithmsOne {
+  umbrella header "Pods-AlgorithmsOne-umbrella.h"
+
+  export *
+  module * { export * }
+}
