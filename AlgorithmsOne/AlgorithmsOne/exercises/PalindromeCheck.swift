@@ -18,16 +18,15 @@ func powNumber(number: Int, pow: Int) -> Int {
 }
 
 // 3.Calculeaza oglinditul unui numar Ex: 125 -> 521
-func mirrorNumber(number: Int) -> Int {
-    var temporalNumber = number
-    let numbersCount = String(number)
-    var mirrorNumber = 0
-    for _ in 0..<numbersCount.count {
-        mirrorNumber = (mirrorNumber * 10) + temporalNumber % 10
-        temporalNumber /= 10
+    func mirrorNumber(number: Int) -> Int {
+        var mirrorNumber = 0
+        var temporalNumber = number
+        while temporalNumber > 0 {
+            mirrorNumber = (mirrorNumber * 10) + temporalNumber % 10
+            temporalNumber /= 10
+        }
+        return mirrorNumber
     }
-   return mirrorNumber
-}
 
 func mirrorNumberRecursive(number: Int) -> Int {
     let numberString = String(number)
