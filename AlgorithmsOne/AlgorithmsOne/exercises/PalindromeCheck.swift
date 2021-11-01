@@ -47,3 +47,4 @@ func checkIfPalindrome(number: Int) -> Bool {
 }
 
 }
+///_____________
