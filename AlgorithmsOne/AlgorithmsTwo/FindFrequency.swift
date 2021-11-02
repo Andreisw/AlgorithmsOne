@@ -7,13 +7,9 @@
 
 import Foundation
 
-
 class FindFrequency {
-    
-    func findNumberFrequency(number: Int) -> [(Int,Int)] {
-        var temporalElement: (element: Int,count: Int) = (0,0)
-        let frequencyList: [(Int,Int)] = []
-        
+    func findNumberFrequency(number: Int) -> [String: Int] {
+        let frequencyList: [String: Int] = [:]
         return frequencyList
     }
 }

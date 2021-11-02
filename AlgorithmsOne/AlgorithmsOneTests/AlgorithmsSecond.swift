@@ -16,7 +16,6 @@ class AlgorithmsSecond: XCTestCase {
     var powNum: PowIterative!
     var biggestNumber: FindBiggestNumber!
     var frequencyTest: FindFrequency!
-    
     override  func setUp() {
         addOnes = AddOnesNumber()
         divisors = Divisors()
@@ -31,11 +30,11 @@ class AlgorithmsSecond: XCTestCase {
         biggestNumber = nil
     }
     func test_number_frequency() {
-        XCTAssert(frequencyTest.findNumberFrequency(number: 1111) == [1: 4])
-        XCTAssert(frequencyTest.findNumberFrequency(number: 1234) == [(4, 1),(3, 1),(2, 1),(1, 1)])
-        XCTAssert(frequencyTest.findNumberFrequency(number: 0) == [(0, 1)])
-        XCTAssert(frequencyTest.findNumberFrequency(number: -222) == [(-2, 3)])
-        XCTAssert(frequencyTest.findNumberFrequency(number: 223344555) == [(5, 3),(4, 2),(3,2),(2, 2)])
+        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 1111), ["1": 4])
+        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 1234), ["1": 1, "2": 1, "3": 1, "4": 1 ])
+        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 0), ["0": 1])
+        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 223334555), ["2": 2, "3": 3, "4": 1, "5": 3])
+        XCTAssertEqual(frequencyTest.findNumberFrequency(number: -22), ["-2": 2])
     }
     func test_number_divisors() {
         XCTAssert(divisors.numberDivisors(number: 140) == [1, 2, 5, 7, 140])
