@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     let halfSum = ListHalfSum()
     let powIterative = PowIterative()
     let biggetsNumber = FindBiggestNumber()
-    let numberFrequency = NumberFrequency()
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(numberFrequency.sortArray(list: numberFrequency.countSingleDigit(number: 111122)))
 }
 }

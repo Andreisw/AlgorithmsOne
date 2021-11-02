@@ -15,6 +15,8 @@ class AlgorithmsSecond: XCTestCase {
     var halfSum: ListHalfSum!
     var powNum: PowIterative!
     var biggestNumber: FindBiggestNumber!
+    var frequencyTest: FindFrequency!
+    
     override  func setUp() {
         addOnes = AddOnesNumber()
         divisors = Divisors()
@@ -22,10 +24,18 @@ class AlgorithmsSecond: XCTestCase {
         halfSum = ListHalfSum()
         powNum = PowIterative()
         biggestNumber = FindBiggestNumber()
+        frequencyTest = FindFrequency()
     }
     override func tearDown() {
        powNum = nil
         biggestNumber = nil
+    }
+    func test_number_frequency() {
+        XCTAssert(frequencyTest.findNumberFrequency(number: 1111) == [(1, 4)])
+        XCTAssert(frequencyTest.findNumberFrequency(number: 1234) == [(4, 1),(3, 1),(2, 1),(1, 1)])
+        XCTAssert(frequencyTest.findNumberFrequency(number: 0) == [(0, 1)])
+        XCTAssert(frequencyTest.findNumberFrequency(number: -222) == [(-2, 3)])
+        XCTAssert(frequencyTest.findNumberFrequency(number: 223344555) == [(5, 3),(4, 2),(3,2),(2, 2)]) 
     }
     func test_number_divisors() {
         XCTAssert(divisors.numberDivisors(number: 140) == [1, 2, 5, 7, 140])

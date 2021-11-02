@@ -13,7 +13,9 @@
 		934A226B272C316800450B11 /* ListHalfSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A226A272C316800450B11 /* ListHalfSum.swift */; };
 		934A227C272C33EB00450B11 /* PowInterative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A227B272C33EB00450B11 /* PowInterative.swift */; };
 		934A2284272C3A7200450B11 /* FindBiggestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A2283272C3A7200450B11 /* FindBiggestNumber.swift */; };
-		934A2294272FDE1200450B11 /* NumberFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A2293272FDE1200450B11 /* NumberFrequency.swift */; };
+		934A22BB2731901500450B11 /* FindFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22BA2731901500450B11 /* FindFrequency.swift */; };
+		934A22BC2731901500450B11 /* FindFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22BA2731901500450B11 /* FindFrequency.swift */; };
+		934A22BD2731901500450B11 /* FindFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22BA2731901500450B11 /* FindFrequency.swift */; };
 		9358F711272A78DE007A4FCD /* AddOnesNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F710272A78DE007A4FCD /* AddOnesNumber.swift */; };
 		9358F716272A79BE007A4FCD /* AlgorithmsSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */; };
 		93712B1E272A9A850043E223 /* Divisors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93712B1D272A9A850043E223 /* Divisors.swift */; };
@@ -58,7 +60,7 @@
 		934A226A272C316800450B11 /* ListHalfSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHalfSum.swift; sourceTree = "<group>"; };
 		934A227B272C33EB00450B11 /* PowInterative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowInterative.swift; sourceTree = "<group>"; };
 		934A2283272C3A7200450B11 /* FindBiggestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBiggestNumber.swift; sourceTree = "<group>"; };
-		934A2293272FDE1200450B11 /* NumberFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFrequency.swift; sourceTree = "<group>"; };
+		934A22BA2731901500450B11 /* FindFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFrequency.swift; sourceTree = "<group>"; };
 		9358F710272A78DE007A4FCD /* AddOnesNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnesNumber.swift; sourceTree = "<group>"; };
 		9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSecond.swift; sourceTree = "<group>"; };
 		93712B1D272A9A850043E223 /* Divisors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divisors.swift; sourceTree = "<group>"; };
@@ -133,7 +135,7 @@
 				934A226A272C316800450B11 /* ListHalfSum.swift */,
 				934A227B272C33EB00450B11 /* PowInterative.swift */,
 				934A2283272C3A7200450B11 /* FindBiggestNumber.swift */,
-				934A2293272FDE1200450B11 /* NumberFrequency.swift */,
+				934A22BA2731901500450B11 /* FindFrequency.swift */,
 			);
 			path = AlgorithmsTwo;
 			sourceTree = "<group>";
@@ -230,7 +232,6 @@
 			buildConfigurationList = 93EB276E2727DFF100551FF8 /* Build configuration list for PBXNativeTarget "AlgorithmsOne" */;
 			buildPhases = (
 				0884D8C6068B2525BD5DEE6E /* [CP] Check Pods Manifest.lock */,
-				934A228F272C3EDA00450B11 /* Swift Lint */,
 				93EB27402727DFEB00551FF8 /* Sources */,
 				93EB27412727DFEB00551FF8 /* Frameworks */,
 				93EB27422727DFEB00551FF8 /* Resources */,
@@ -417,24 +418,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		934A228F272C3EDA00450B11 /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,8 +436,8 @@
 				934A227C272C33EB00450B11 /* PowInterative.swift in Sources */,
 				93712B1E272A9A850043E223 /* Divisors.swift in Sources */,
 				93EB277B2727E00700551FF8 /* PrimeNumber.swift in Sources */,
-				934A2294272FDE1200450B11 /* NumberFrequency.swift in Sources */,
 				93EB274A2727DFEB00551FF8 /* SceneDelegate.swift in Sources */,
+				934A22BB2731901500450B11 /* FindFrequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93EB275F2727DFF100551FF8 /* AlgorithmsOneTests.swift in Sources */,
+				934A22BC2731901500450B11 /* FindFrequency.swift in Sources */,
 				9358F716272A79BE007A4FCD /* AlgorithmsSecond.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93EB276A2727DFF100551FF8 /* AlgorithmsOneUITests.swift in Sources */,
+				934A22BD2731901500450B11 /* FindFrequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
