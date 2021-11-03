@@ -30,11 +30,11 @@ class AlgorithmsSecond: XCTestCase {
         biggestNumber = nil
     }
     func test_number_frequency() {
-        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 1111), ["1": 4])
-        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 1234), ["1": 1, "2": 1, "3": 1, "4": 1 ])
-        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 0), ["0": 1])
-        XCTAssertEqual(frequencyTest.findNumberFrequency(number: 223334555), ["2": 2, "3": 3, "4": 1, "5": 3])
-        XCTAssertEqual(frequencyTest.findNumberFrequency(number: -22), ["-2": 2])
+        XCTAssertEqual(try frequencyTest.findNumberFrequency(number: 1111), ["1": 4])
+        XCTAssertEqual(try frequencyTest.findNumberFrequency(number: 1234), ["1": 1, "2": 1, "3": 1, "4": 1 ])
+        XCTAssertEqual(try frequencyTest.findNumberFrequency(number: 0), ["0": 1])
+        XCTAssertEqual(try frequencyTest.findNumberFrequency(number: 223334555), ["2": 2, "3": 3, "4": 1, "5": 3])
+        XCTAssertEqual(try frequencyTest.findNumberFrequency(number: -22), ["-2": 2])
     }
     func test_number_divisors() {
         XCTAssert(divisors.numberDivisors(number: 140) == [1, 2, 5, 7, 140])
