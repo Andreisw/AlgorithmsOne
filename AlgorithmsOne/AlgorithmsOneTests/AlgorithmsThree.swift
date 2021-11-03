@@ -36,9 +36,9 @@ class AlgorithmsThree: XCTestCase {
         XCTAssert(numberPosition.findNumberPosition(numberToFind: 4, numberList: [4, 4, 4]) == [0, 1, 2])
     }
     func test_create_number() {
-        XCTAssert(createNumber.createBggestNumber(digits: [2, 3, 4]) == 432)
-        XCTAssert(createNumber.createBggestNumber(digits: [0]) == 0)
-        XCTAssert(createNumber.createBggestNumber(digits: [-2, 3, 4]) == 0)
-        XCTAssert(createNumber.createBggestNumber(digits: [1, 4, 3, 8, 9, 8]) == 988431)
+        XCTAssert(try createNumber.createBiggestNumber(digits: [2, 3, 4]) == 432)
+        XCTAssert(try createNumber.createBiggestNumber(digits: [0]) == 0)
+        XCTAssert(try createNumber.createBiggestNumber(digits: [-2, 3, 4]) == 0)
+        XCTAssert(try createNumber.createBiggestNumber(digits: [1, 4, 3, 8, 9, 8]) == 988431)
     }
 }
