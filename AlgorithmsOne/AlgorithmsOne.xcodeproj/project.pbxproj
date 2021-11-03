@@ -16,6 +16,7 @@
 		934A22BB2731901500450B11 /* FindFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22BA2731901500450B11 /* FindFrequency.swift */; };
 		934A22BC2731901500450B11 /* FindFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22BA2731901500450B11 /* FindFrequency.swift */; };
 		934A22BD2731901500450B11 /* FindFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22BA2731901500450B11 /* FindFrequency.swift */; };
+		934A22FA2732A6C100450B11 /* FindNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A22F92732A6C100450B11 /* FindNumber.swift */; };
 		9358F711272A78DE007A4FCD /* AddOnesNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F710272A78DE007A4FCD /* AddOnesNumber.swift */; };
 		9358F716272A79BE007A4FCD /* AlgorithmsSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */; };
 		93712B1E272A9A850043E223 /* Divisors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93712B1D272A9A850043E223 /* Divisors.swift */; };
@@ -62,6 +63,7 @@
 		934A227B272C33EB00450B11 /* PowInterative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowInterative.swift; sourceTree = "<group>"; };
 		934A2283272C3A7200450B11 /* FindBiggestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBiggestNumber.swift; sourceTree = "<group>"; };
 		934A22BA2731901500450B11 /* FindFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFrequency.swift; sourceTree = "<group>"; };
+		934A22F92732A6C100450B11 /* FindNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNumber.swift; sourceTree = "<group>"; };
 		9358F710272A78DE007A4FCD /* AddOnesNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnesNumber.swift; sourceTree = "<group>"; };
 		9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSecond.swift; sourceTree = "<group>"; };
 		93712B1D272A9A850043E223 /* Divisors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divisors.swift; sourceTree = "<group>"; };
@@ -127,10 +129,19 @@
 			path = AlgorithmsTwo;
 			sourceTree = "<group>";
 		};
+		934A22F82732A68200450B11 /* AlgorithmsThree */ = {
+			isa = PBXGroup;
+			children = (
+				934A22F92732A6C100450B11 /* FindNumber.swift */,
+			);
+			path = AlgorithmsThree;
+			sourceTree = "<group>";
+		};
 		93EB273B2727DFEB00551FF8 = {
 			isa = PBXGroup;
 			children = (
 				93EB274B2727DFEB00551FF8 /* ViewController.swift */,
+				934A22F82732A68200450B11 /* AlgorithmsThree */,
 				934A225B272C2CFE00450B11 /* AlgorithmsTwo */,
 				93EB27462727DFEB00551FF8 /* AlgorithmsOne */,
 				93EB275D2727DFF100551FF8 /* AlgorithmsOneTests */,
@@ -455,6 +466,7 @@
 				934A227C272C33EB00450B11 /* PowInterative.swift in Sources */,
 				93712B1E272A9A850043E223 /* Divisors.swift in Sources */,
 				93EB277B2727E00700551FF8 /* PrimeNumber.swift in Sources */,
+				934A22FA2732A6C100450B11 /* FindNumber.swift in Sources */,
 				93EB274A2727DFEB00551FF8 /* SceneDelegate.swift in Sources */,
 				934A22BB2731901500450B11 /* FindFrequency.swift in Sources */,
 			);
