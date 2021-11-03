@@ -8,9 +8,13 @@
 import Foundation
 
 class NumberPosition {
-    func findNumberPosition(number:Int, numberList: [Int]) -> [Int] {
-        var numberPosition = 0
+    func findNumberPosition(numberToFind: Int, numberList: [Int]) -> [Int] {
         var positionList: [Int] = []
+        for number in 0..<numberList.count
+        where numberList[number] == numberToFind {
+            positionList.append(number)
+        }
+        if positionList == [] { return [-1] }
         return positionList
     }
 }
