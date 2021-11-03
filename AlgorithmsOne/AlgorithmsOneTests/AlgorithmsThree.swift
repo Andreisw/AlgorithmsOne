@@ -12,13 +12,14 @@ class AlgorithmsThree: XCTestCase {
     var findNumber: FindNumber!
     var numberPosition: NumberPosition!
     var createNumber: CreateNumber!
+    var sumEvenOdd: SumEvenOdd!
     override  func setUp() {
         findNumber = FindNumber()
         numberPosition = NumberPosition()
         createNumber = CreateNumber()
+        sumEvenOdd = SumEvenOdd()
     }
     override  func tearDown() {
-        findNumber = nil
     }
     func test_find_number_in_list() {
         XCTAssertTrue(findNumber.findIfNumberExistInList(number: 5, listNumbers: [1, 2, 3, 4, 5]))
@@ -40,5 +41,11 @@ class AlgorithmsThree: XCTestCase {
         XCTAssert(try createNumber.createBiggestNumber(digits: [0]) == 0)
         XCTAssert(try createNumber.createBiggestNumber(digits: [-2, 3, 4]) == 0)
         XCTAssert(try createNumber.createBiggestNumber(digits: [1, 4, 3, 8, 9, 8]) == 988431)
+    }
+    func test_sum_even_odd_numbers() {
+        XCTAssert(sumEvenOdd.sumForFirstEvLastOd(numberList: [2, 3, 5, 6, 7, 9]) == 11)
+        XCTAssert(sumEvenOdd.sumForFirstEvLastOd(numberList: [0]) == 0)
+        XCTAssert(sumEvenOdd.sumForFirstEvLastOd(numberList: [-3, 2, 4, -5, -9]) == -7)
+        XCTAssert(sumEvenOdd.sumForFirstEvLastOd(numberList: [-5, 3, 9, 6, -1, 8]) == 5)
     }
 }
