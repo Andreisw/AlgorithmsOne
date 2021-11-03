@@ -20,6 +20,7 @@
 		9358F711272A78DE007A4FCD /* AddOnesNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F710272A78DE007A4FCD /* AddOnesNumber.swift */; };
 		9358F716272A79BE007A4FCD /* AlgorithmsSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */; };
 		93712B1E272A9A850043E223 /* Divisors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93712B1D272A9A850043E223 /* Divisors.swift */; };
+		937175A72732AF260018CCE4 /* AlgorithmsThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937175A62732AF260018CCE4 /* AlgorithmsThree.swift */; };
 		93EB27482727DFEB00551FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB27472727DFEB00551FF8 /* AppDelegate.swift */; };
 		93EB274A2727DFEB00551FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB27492727DFEB00551FF8 /* SceneDelegate.swift */; };
 		93EB274C2727DFEB00551FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB274B2727DFEB00551FF8 /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		9358F710272A78DE007A4FCD /* AddOnesNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnesNumber.swift; sourceTree = "<group>"; };
 		9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSecond.swift; sourceTree = "<group>"; };
 		93712B1D272A9A850043E223 /* Divisors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divisors.swift; sourceTree = "<group>"; };
+		937175A62732AF260018CCE4 /* AlgorithmsThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsThree.swift; sourceTree = "<group>"; };
 		93EB27442727DFEB00551FF8 /* AlgorithmsOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EB27472727DFEB00551FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EB27492727DFEB00551FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				93EB275E2727DFF100551FF8 /* AlgorithmsOneTests.swift */,
 				9358F715272A79BE007A4FCD /* AlgorithmsSecond.swift */,
+				937175A62732AF260018CCE4 /* AlgorithmsThree.swift */,
 				93EB27602727DFF100551FF8 /* Info.plist */,
 			);
 			path = AlgorithmsOneTests;
@@ -476,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937175A72732AF260018CCE4 /* AlgorithmsThree.swift in Sources */,
 				93EB275F2727DFF100551FF8 /* AlgorithmsOneTests.swift in Sources */,
 				934A22BC2731901500450B11 /* FindFrequency.swift in Sources */,
 				9358F716272A79BE007A4FCD /* AlgorithmsSecond.swift in Sources */,
