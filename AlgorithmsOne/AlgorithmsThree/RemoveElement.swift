@@ -8,10 +8,15 @@
 import Foundation
 
 class RemoveElement {
-    
     func removeElement(remove digit: Int, list: [Int]) -> [Int] {
-        var newList: [Int] = []
-        
-        return newList
+        var resultList: [Int] = []
+        for element in list {
+            if element == digit {
+                continue
+            } else {
+                resultList.append(element)
+            }
+        }
+        return resultList
     }
 }

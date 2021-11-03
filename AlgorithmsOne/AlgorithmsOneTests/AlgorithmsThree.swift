@@ -52,7 +52,7 @@ class AlgorithmsThree: XCTestCase {
     }
     func test_remove_element() {
         XCTAssert(remove.removeElement(remove: 3, list: [2, 3, 4]) == [2, 4])
-        XCTAssert(remove.removeElement(remove: 5, list: [2, 3, 4, 5, 5, 6, 5]) == [2, 4, 6])
+        XCTAssert(remove.removeElement(remove: 5, list: [2, 3, 4, 5, 5, 6, 5]) == [2, 3, 4, 6])
         XCTAssert(remove.removeElement(remove: 3, list: []) == [])
     }
 }
