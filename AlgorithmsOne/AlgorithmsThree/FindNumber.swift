@@ -9,7 +9,9 @@ import Foundation
 
 class FindNumber {
     func findIfNumberExistInList(number: Int, listNumbers: [Int]) -> Bool {
-        return true
+        for num in listNumbers where num == number {
+                return true
+        }
+        return false
     }
 }
-

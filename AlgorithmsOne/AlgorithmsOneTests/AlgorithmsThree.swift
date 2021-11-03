@@ -19,10 +19,10 @@ class AlgorithmsThree: XCTestCase {
     }
     func test_find_number_in_list() {
         XCTAssertTrue(findNumber.findIfNumberExistInList(number: 5, listNumbers: [1, 2, 3, 4, 5]))
-        XCTAssertTrue(findNumber.findIfNumberExistInList(number: -2, listNumbers: [1, 2, 3, 4, 5, -1]))
+        XCTAssertTrue(findNumber.findIfNumberExistInList(number: -1, listNumbers: [1, 2, 3, 4, 5, -1]))
         XCTAssertTrue(findNumber.findIfNumberExistInList(number: 3, listNumbers: [3] ))
         XCTAssertFalse(findNumber.findIfNumberExistInList(number: 5, listNumbers: [1, 2, 3, 4]))
-        XCTAssertTrue(findNumber.findIfNumberExistInList(number: 234, listNumbers: [1, 2, 3, 4, 5]))
-        XCTAssertTrue(findNumber.findIfNumberExistInList(number: 1, listNumbers: [2, 3, 4, 5]))
+        XCTAssertFalse(findNumber.findIfNumberExistInList(number: 234, listNumbers: [1, 2, 3, 4, 5]))
+        XCTAssertFalse(findNumber.findIfNumberExistInList(number: 1, listNumbers: [2, 3, 4, 5]))
     }
 }
