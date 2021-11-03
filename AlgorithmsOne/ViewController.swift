@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     let test = AddOnesNumber()
-    let divid = Divisors()
     let digit = CountGivenDigit()
     let halfSum = ListHalfSum()
     let powIterative = PowIterative()

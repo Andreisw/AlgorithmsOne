@@ -37,11 +37,9 @@ class AlgorithmsSecond: XCTestCase {
         XCTAssertEqual(try frequencyTest.findNumberFrequency(number: -22), ["-2": 2])
     }
     func test_number_divisors() {
-        XCTAssert(divisors.numberDivisors(number: 140) == [1, 2, 5, 7, 140])
-        XCTAssert(divisors.numberDivisors(number: 6) == [1, 2, 3, 6])
-        XCTAssert(divisors.numberDivisors(number: 125) == [1, 5, 125])
-        XCTAssert(divisors.numberDivisors(number: 0) == [])
-//        XCTAssert(divisors.numberDivisors(number: 77) == [1,7,11,77])
+        XCTAssert(try divisors.checkAllDivisiblCases(number: 6) == [1, 2, 3, 6])
+        XCTAssert(try divisors.checkAllDivisiblCases(number: 0) == [])
+        XCTAssert(try divisors.checkAllDivisiblCases(number: 77) == [1, 7, 11, 77])
     }
     func test_add_ones_number() {
         XCTAssertEqual(addOnes.addToOnesNumber(number: 125), 120)
