@@ -15,6 +15,7 @@ class AlgorithmsThree: XCTestCase {
     var sumEvenOdd: SumEvenOdd!
     var remove: RemoveElement!
     var removeAt: RemoveAt!
+    var addOdd: AddOddNumber!
     override  func setUp() {
         findNumber = FindNumber()
         numberPosition = NumberPosition()
@@ -22,6 +23,7 @@ class AlgorithmsThree: XCTestCase {
         sumEvenOdd = SumEvenOdd()
         remove = RemoveElement()
         removeAt = RemoveAt()
+        addOdd = AddOddNumber()
     }
     override  func tearDown() {
     }
@@ -62,5 +64,10 @@ class AlgorithmsThree: XCTestCase {
         XCTAssert(removeAt.removeAt(at: 0, list: [1, 2, 3]) == [2, 3])
         XCTAssert(removeAt.removeAt(at: 5, list: [1, 2, 3]) == [1, 2, 3])
         XCTAssert(removeAt.removeAt(at: -3, list: [1, 2, 3, 4]) == [1, 2, 3, 4])
+    }
+    func test_add_odd_number() {
+        XCTAssert(addOdd.addOneToOddNumber(numberList: [2, 3, 4, 5, 6]) == [2, 4, 6, 6])
+        XCTAssert(addOdd.addOneToOddNumber(numberList: [-2, -3, -5, ]) == [-2, -2, -4,])
+        XCTAssert(addOdd.addOneToOddNumber(numberList: [0]) == [1])
     }
 }
