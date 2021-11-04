@@ -7,11 +7,19 @@
 
 import Foundation
 
-
 class AddOddNumber {
     func addOneToOddNumber(numberList: [Int]) -> [Int] {
+        var temporalNumber = 0
         var resultList: [Int] = []
-        
-       return resultList
+        for number in numberList {
+            if number % 2 == 0 && number != 0 {
+                temporalNumber = number
+                resultList.append(temporalNumber)
+            } else {
+                temporalNumber = number + 1
+                resultList.append(temporalNumber)
+            }
+        }
+        return resultList
     }
 }

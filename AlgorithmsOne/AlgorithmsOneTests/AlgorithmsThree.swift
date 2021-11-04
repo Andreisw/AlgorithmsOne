@@ -66,8 +66,8 @@ class AlgorithmsThree: XCTestCase {
         XCTAssert(removeAt.removeAt(at: -3, list: [1, 2, 3, 4]) == [1, 2, 3, 4])
     }
     func test_add_odd_number() {
-        XCTAssert(addOdd.addOneToOddNumber(numberList: [2, 3, 4, 5, 6]) == [2, 4, 6, 6])
-        XCTAssert(addOdd.addOneToOddNumber(numberList: [-2, -3, -5, ]) == [-2, -2, -4,])
+        XCTAssert(addOdd.addOneToOddNumber(numberList: [2, 3, 4, 5, 6]) == [2, 4, 4, 6, 6])
+        XCTAssert(addOdd.addOneToOddNumber(numberList: [-2, -3, -5]) == [-2, -2, -4])
         XCTAssert(addOdd.addOneToOddNumber(numberList: [0]) == [1])
     }
 }
