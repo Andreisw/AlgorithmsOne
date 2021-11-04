@@ -16,6 +16,7 @@ class AlgorithmsThree: XCTestCase {
     var remove: RemoveElement!
     var removeAt: RemoveAt!
     var addOdd: AddOddNumber!
+    var oddEvenList: OddAndEvenLists!
     override  func setUp() {
         findNumber = FindNumber()
         numberPosition = NumberPosition()
@@ -24,6 +25,7 @@ class AlgorithmsThree: XCTestCase {
         remove = RemoveElement()
         removeAt = RemoveAt()
         addOdd = AddOddNumber()
+        oddEvenList = OddAndEvenLists()
     }
     override  func tearDown() {
     }
@@ -69,5 +71,12 @@ class AlgorithmsThree: XCTestCase {
         XCTAssert(addOdd.addOneToOddNumber(numberList: [2, 3, 4, 5, 6]) == [2, 4, 4, 6, 6])
         XCTAssert(addOdd.addOneToOddNumber(numberList: [-2, -3, -5]) == [-2, -2, -4])
         XCTAssert(addOdd.addOneToOddNumber(numberList: [0]) == [1])
+    }
+    func test_odd_even_lists() {
+        XCTAssert(oddEvenList.createOddAndEvenNumbersList(list: [2, 3, 4, 5, 6, 7, 8]) == [[2, 4, 6, 8], [7, 5, 3]])
+        XCTAssert(oddEvenList.createOddAndEvenNumbersList(list: [9, -2, 3, 5, -8, 1, 3, 4])
+                    == [[-8, -2, 4], [9, 5, 3, 3, 1]])
+        XCTAssert(oddEvenList.createOddAndEvenNumbersList(list: []) == [[], []])
+        XCTAssert(oddEvenList.createOddAndEvenNumbersList(list: [8, 4, 6]) == [[4, 6, 8], []])
     }
 }
